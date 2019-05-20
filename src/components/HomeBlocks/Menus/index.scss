@@ -1,0 +1,30 @@
+.Home-menus-block{
+    background: #fff;
+    margin:30px 30px 2px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    .Home-menus-ul{
+        display: flex;
+        width: 60%;
+        margin: auto;
+    }
+    .Home-munes-li{
+        flex: 1;
+        text-align: center;
+        height: 46px;
+        line-height: 46px;
+        font-size: 18px;
+        color:#1296db;
+        &.Home-munes-li-active,&.has-selected,&:hover{
+            color: #3f81c1;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 20px;
+            -ms-transform:rotate(10deg); /* Internet Explorer 9*/
+            -moz-transform:rotate(10deg); /* Firefox */
+            -webkit-transform:rotate(10deg); /* Safari 和 Chrome */
+            -o-transform:rotate(10deg); /* Opera */
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+        }
+    }
+}

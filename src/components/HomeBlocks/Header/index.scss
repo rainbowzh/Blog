@@ -1,0 +1,34 @@
+.Home-header-block{
+    text-align: center;
+    .header-title-logo{
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        padding: 10px;
+        box-sizing: border-box;
+        background: url(../../../images/img-sprite-icon.png);
+        background-repeat: no-repeat;
+        background-position: 0px -100px;
+        &:hover{
+            cursor: pointer;
+            animation:cricle 5s infinite;
+            -moz-animation:cricle 5s infinite; /* Firefox */
+            -webkit-animation:cricle 5s infinite; /* Safari and Chrome */
+            -o-animation:cricle 5s infinite; /* Opera */
+        }
+    }
+}
+@keyframes cricle{
+    25%{
+        transform: rotate(-90deg);
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    75%{
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
