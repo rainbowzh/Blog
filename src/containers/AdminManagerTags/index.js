@@ -1,6 +1,6 @@
 import React, { Component } from 'react' ;
 import { Tag, Input, Tooltip, Icon } from 'antd';
-// import _ from 'lodash' ;
+import _ from 'lodash' ;
 
 class AdminManagerTags extends Component {
     constructor(props) {
@@ -16,9 +16,10 @@ class AdminManagerTags extends Component {
     }; 
 
     handleClose = removedTag => {
-        const tags = this.state.tags.filter(tag => tag !== removedTag);
+        // const tags = this.state.tags.filter(tag => tag !== removedTag);
+        _.remove(this.state.tags , tag => tag === removedTag) ;
         this.setState({
-            tags
+            tags :this.state.tags
         })
     }
 
