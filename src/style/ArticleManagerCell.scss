@@ -1,0 +1,36 @@
+.ArticleManagerCell-block{
+    height: 80px;
+    padding: 15px 0 0;
+    border-bottom: 1px solid #dbdbdb;
+    .ArticleManagerCell-left{
+        float: left;
+    }
+    .ArticleManagerCell-right{
+        float: right;
+    }
+}
+.ArticleManagerCell-left-title{
+    font-size: 18px;
+    line-height: 28px;
+    cursor: pointer;
+}
+.ArticleManagerCell-left-related{
+    color: #bfbfbf;
+    line-height: 26px;
+    cursor: pointer;
+    span{
+        margin-left: 20px;
+    }
+    span:nth-child(1){
+        margin-left: 0px;
+    }
+}
+.ArticleManagerCell-right{
+    button{
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+    button:nth-child(1){
+        margin: 0px;
+    }
+}

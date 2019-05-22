@@ -1,0 +1,24 @@
+.AdminNewArticle-block{
+    .AdminNewArticle-content{
+        color: #363636;
+        margin: 20px 0;
+        .AdminNewArticle-content-title ,.AdminNewArticle-content-type{
+            height: 80px;
+            margin: 10px 0;
+        }
+    }
+    .AdminNewArticle-foot-related{
+        margin: 30px 0;
+        button{
+            margin-left: 30px ;
+        }
+        button:nth-child(1) {
+            margin-left: 0px;
+        }
+    }
+}
+.AdminNewArticle-content-title ,.AdminNewArticle-content-main{
+    p{
+        font-size: 16px;
+    }
+}

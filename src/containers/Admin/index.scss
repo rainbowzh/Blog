@@ -3,16 +3,17 @@
     height: 100%;
     .Admin-left{
         width: 200px;
-        height: auto;
+        height: 100%;
         min-height: 700px;
         float: left;
         background: #001529;
+        position: fixed ;
     }
     .Admin-right{
         height: auto;
         min-height: 700px;
-        margin-left: 200px;
         padding: 30px;
         overflow: hidden;
+        margin-left: 200px;
     }
 }

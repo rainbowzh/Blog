@@ -2,6 +2,9 @@ import React , { Component } from 'react' ;
 import AdminMenu from '../../components/AdminMenu';
 import AdminManagerUser from '../AdminManagerUser' ;
 import AdminManagerTags from '../AdminManagerTags' ;
+import AdminManagerArticle from '../AdminManagerArticle' ;
+import AdminNewArticle from '../AdminNewArticle';
+
 import './index.scss' ;
 class Admin extends Component {
     render(){
@@ -12,7 +15,9 @@ class Admin extends Component {
                 </div>
                 <div className="Admin-right">
                     {/* <AdminManagerUser/> */}
-                    <AdminManagerTags/>
+                    {/* <AdminManagerTags/> */}
+                    {/* <AdminManagerArticle/> */}
+                    <AdminNewArticle/>
                 </div>
             </div>
         )

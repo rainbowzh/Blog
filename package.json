@@ -3,8 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
     "antd": "^3.18.1",
     "babel-plugin-import": "^1.11.2",
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.0",
     "customize-cra": "^0.2.12",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
@@ -17,8 +22,10 @@
     "sass-loader": "^7.1.0"
   },
   "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "react-start": "react-app-rewired start",
+    "start": "concurrently \"yarn react-start\" \"cd server && yarn start\"",
+    "react-build": "react-app-rewired build",
+    "build":  "concurrently \"yarn react-build\" \"cd server && yarn build\"",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject"
   },
